@@ -1,0 +1,26 @@
+<div class="container mt-4" *ngIf="!loading && product; else loadingTpl">
+  <div class="row">
+    <div class="col-md-5">
+    <img
+  *ngIf="product.image"
+  [src]="product.image"
+  alt="{{ product.name }}"
+  class="img-fluid rounded shadow-sm"
+/>
+
+    </div>
+
+    <div class="col-md-7">
+      <h2>{{ product.name }}</h2>
+      <p>{{ product.description }}</p>
+      <p><strong>Category:</strong> {{ product.category }}</p>
+      <p><strong>Price:</strong> ₹{{ product.price }}</p>
+      <button class="btn btn-success" (click)="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #loadingTpl>
+  <p *ngIf="loading">Loading product details...</p>
+  <p *ngIf="error">{{ error }}</p>
+</ng-template>

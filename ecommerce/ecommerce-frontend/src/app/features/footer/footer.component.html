@@ -1,0 +1,64 @@
+<footer class="footer bg-dark text-light pt-5 pb-4 mt-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6">
+        <h5 class="footer-title">MyShop</h5>
+        <p class="text">Your trusted online shop for great products.</p>
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6">
+        <h6 class="footer-heading">Quick Links</h6>
+        <ul class="list-unstyled footer-links">
+          <li><a routerLink="/">Home</a></li>
+          <li><a routerLink="/cart">Cart</a></li>
+          <li><a routerLink="/orders">Orders</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6">
+        <h6 class="footer-heading">Categories</h6>
+
+        <!-- async pipe handles subscribe/unsubscribe -->
+        <ul class="list-unstyled footer-links">
+          <li *ngIf="(categories$ | async) as categories; else loading">
+            <ng-container *ngIf="categories.length > 0; else noCats">
+              <a
+                *ngFor="let cat of categories"
+                [routerLink]="['/products']"
+                [queryParams]="{ category: cat.name }"
+                >{{ cat.name }}</a
+              >
+            </ng-container>
+          </li>
+        </ul>
+
+        <ng-template #loading>
+          <p class="small text-muted">Loading categories…</p>
+        </ng-template>
+
+        <ng-template #noCats>
+          <p class="small text-muted">No categories available</p>
+        </ng-template>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-heading">Contact Us</h6>
+        <ul class="list-unstyled">
+          <li>Email: support@myshop.com</li>
+          <li>Phone: +91 12345 67890</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-secondary my-4" />
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+      <p class="mb-0 small text-white-50">© {{ currentYear }} MyShop – All rights reserved.</p>
+      <div class="social-icons mt-3 mt-sm-0">
+        <a href="#" class="social-link me-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="social-link me-2"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>

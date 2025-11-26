@@ -1,0 +1,76 @@
+<div class="main-container">
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <h3>Filters</h3>
+    <div class="filter-grid">
+      <!-- Search Filter -->
+      <div class="filter-item">
+        <label for="search">Search Products</label>
+        <input
+          type="text"
+          id="search"
+          [(ngModel)]="filters.search"
+          placeholder="Search by name..."
+          (input)="onFilterChange()"
+        />
+      </div>
+
+      <!-- Min Price Filter -->
+      <div class="filter-item">
+        <label for="minPrice">Min Price (₹)</label>
+        <input
+          type="number"
+          id="minPrice"
+          [(ngModel)]="filters.min_price"
+          placeholder="Min"
+          (input)="onFilterChange()"
+        />
+      </div>
+
+      <!-- Max Price Filter -->
+      <div class="filter-item">
+        <label for="maxPrice">Max Price (₹)</label>
+        <input
+          type="number"
+          id="maxPrice"
+          [(ngModel)]="filters.max_price"
+          placeholder="Max"
+          (input)="onFilterChange()"
+        />
+      </div>
+
+      <!-- Clear Filters Button -->
+      <div class="filter-item">
+        <button (click)="clearFilters()">Clear Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="products-grid">
+    <div *ngIf="products.length === 0" class="no-products">
+      No products found matching your filters.
+    </div>
+
+    <div *ngFor="let product of products" class="product-card">
+      <img
+        *ngIf="product.image"
+        [src]="product.image"
+        alt="{{ product.name }}"
+      />
+      <div class="product-info">
+        <h4>{{ product.name }}</h4>
+        <p>{{ product.description | slice:0:80 }}...</p>
+        <p><strong>₹{{ product.price }}</strong></p>
+        <button [routerLink]="['/products', product.id]">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <button (click)="prevPage()" [disabled]="page <= 1">Previous</button>
+    <span>Page {{ page }} of {{ totalPages }}</span>
+    <button (click)="nextPage()" [disabled]="page >= totalPages">Next</button>
+  </div>
+</div>

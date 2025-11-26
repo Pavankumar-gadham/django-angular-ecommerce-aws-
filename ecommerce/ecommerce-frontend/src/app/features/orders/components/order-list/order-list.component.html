@@ -1,0 +1,38 @@
+<div class="container mt-4">
+  <h3>Your Orders</h3>
+
+  <div class="filters mb-3">
+    <label class="me-3">
+      <input type="radio" name="dateFilter" value="all" [(ngModel)]="selectedFilter" (change)="onFilterChange('all')" /> All
+    </label>
+    <label class="me-3">
+      <input type="radio" name="dateFilter" value="today" [(ngModel)]="selectedFilter" (change)="onFilterChange('today')" /> Today
+    </label>
+    <label class="me-3"> 
+      <input type="radio" name="dateFilter" value="last7days" [(ngModel)]="selectedFilter" (change)="onFilterChange('last7days')" /> Last 7 Days
+    </label>
+    <label class="me-3">
+      <input type="radio" name="dateFilter" value="last30days" [(ngModel)]="selectedFilter" (change)="onFilterChange('last30days')" /> Last 30 Days
+    </label>
+  </div>
+
+  <div *ngIf="orders.length === 0" class="text-muted">
+    No orders found for selected period.
+  </div>
+
+  <div *ngFor="let order of orders" class="card mb-3 p-3 shadow-sm">
+    <h5>Order #{{ order.id }}</h5>
+    <p>Total Price: ₹{{ order.total_price }}</p>
+    <p>Placed On: {{ order.created_at | date: 'medium' }}</p>
+
+    <div *ngFor="let item of order.items" class="d-flex align-items-center mb-2 border-top pt-2">
+      <img [src]="item.product.image" alt="{{ item.product.name }}" width="70" height="70" class="me-3 rounded" />
+      <div>
+        <p class="mb-1"><strong>{{ item.product.name }}</strong></p>
+        <p class="mb-0 text-muted">
+          Qty: {{ item.quantity }} &nbsp;|&nbsp; ₹{{ item.price }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

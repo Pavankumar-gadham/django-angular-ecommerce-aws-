@@ -1,0 +1,76 @@
+
+<section class="home-banner">
+  <div class="banner-overlay">
+    <div class="banner-content text-center text-white">
+      <h1 class="display-4 fw-bold">Welcome to MyShop</h1>
+      <p class="lead">Discover the best products with amazing deals</p>
+      <a routerLink="/products" class="btn-shop-now">
+        Shop Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="container py-5">
+  <h2 class="text-center mb-4">Featured Products</h2>
+
+  <div class="row g-4">
+    <ng-container *ngIf="!loadingFeatured; else loadingTpl">
+      <div class="col-6 col-md-3" *ngFor="let p of featuredProducts">
+        <div class="card shadow-sm h-100">
+          <img
+            [src]="imageFor(p)"
+            class="card-img-top"
+            [alt]="p.title || 'Product image'"
+            onerror="this.src='/assets/placeholder.png'"
+          />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{ p.name }}</h5>
+            <p class="card-text text-muted small flex-grow-1">
+              {{ p.short_description || p.description || 'Short product description.' }}
+            </p>
+            <a [routerLink]="['/products', p.id]" class="btn btn-dark w-100 mt-2">View</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- If no featured products -->
+      <div *ngIf="featuredProducts.length === 0" class="col-12 text-center">
+        <p class="text-muted">No featured products right now.</p>
+      </div>
+    </ng-container>
+
+    <ng-template #loadingTpl>
+      <div class="col-12 text-center">
+        <p class="text-muted">Loading featured products…</p>
+      </div>
+    </ng-template>
+  </div>
+</section>
+
+
+<section class="container py-5">
+  <h2 class="h3 mb-4">Browse by category</h2>
+
+  <div class="row g-4 justify-content-center">
+    <div
+      class="col-6 col-sm-4 col-md-3 col-lg-2 text-center"
+      *ngFor="let cat of (categories$ | async)"
+    >
+      <a
+        [routerLink]="['/products']"
+        [queryParams]="{ category: cat.name }"
+        class="text-decoration-none"
+      >
+        <div class="cat-card-simple">
+          <img
+            [src]="imageFor(cat)"
+            [alt]="cat.name"
+            class="img-fluid category-img"
+          />
+        </div>
+        <div class="mt-2 fw-semibold text-dark">{{ cat.name }}</div>
+      </a>
+    </div>
+  </div>
+</section>

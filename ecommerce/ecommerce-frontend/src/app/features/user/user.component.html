@@ -1,0 +1,13 @@
+<div class="profile-container" *ngIf="!loading && !error; else loadingOrError">
+  <h2>User Profile</h2>
+  <div class="profile-card">
+    <p><strong>Username:</strong> {{ user.username }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Date Joined:</strong> {{ user.date_joined | date:'medium' }}</p>
+  </div>
+</div>
+
+<ng-template #loadingOrError>
+  <p *ngIf="loading">Loading user data...</p>
+  <p *ngIf="error" class="error">{{ error }}</p>
+</ng-template>

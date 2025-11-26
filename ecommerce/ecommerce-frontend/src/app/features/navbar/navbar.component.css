@@ -1,0 +1,60 @@
+/* Make the categories dropdown a fixed max-height with scroll, so it doesn't overflow on mobile */
+.categories-menu {
+  max-height: 320px;    /* comfortable height on desktop */
+  overflow-y: auto;
+  min-width: 220px;     /* keeps checkboxes aligned on desktop */
+}
+
+/* Improve touch targets for checkboxes & spacing */
+.touch-friendly .form-check-input {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.touch-friendly .form-check-label {
+  padding-left: 0.5rem;
+}
+
+/* Small screens: make dropdown expand to full width (so checkboxes are readable) */
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 1.05rem;
+  }
+
+  /* Make the dropdown full-width under the collapsed nav so user can easily tap */
+  .dropdown-menu.categories-menu {
+    position: static !important; /* place inside flow when collapsed */
+    width: 100% !important;
+    min-width: auto !important;
+    max-height: 40vh;            /* use viewport relative height on mobile */
+    box-shadow: none;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Slightly larger nav-link hit area on mobile */
+  .navbar-nav .nav-link {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  /* Make logout button full-width inside collapse for easy access (optional) */
+  .logout-btn {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Desktop polishing */
+@media (min-width: 992px) {
+  .categories-menu {
+    min-width: 260px;
+  }
+}
+
+/* Optional: nice scroll for long category list (native look + simple) */
+.categories-menu::-webkit-scrollbar {
+  width: 8px;
+}
+.categories-menu::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: rgba(255,255,255,0.12);
+}

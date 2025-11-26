@@ -1,0 +1,81 @@
+/* Full-width banner */
+.home-banner {
+  background-image: url('src/assets/shopping.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  position: relative;
+}
+
+/* Banner overlay */
+.banner-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Banner text */
+.banner-content h1,
+.banner-content p {
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .home-banner {
+    height: 50vh; /* reduce height on mobile */
+  }
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+}
+
+.category-box {
+  transition: transform 0.25s, box-shadow 0.25s;
+  cursor: pointer;
+}
+.category-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.category-img {
+  width: 100%;
+  height: 140px;         /* same height makes grid perfect */
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+@media (max-width: 576px) {
+  .category-img {
+    height: 110px;       /* smaller height on mobile */
+  }
+}
+
+.btn-shop-now {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #a0a2a4;
+  color: #000000;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+@media (max-width: 576px) {
+  .card-img-top { height: 140px; }
+}
+
+
+

@@ -1,0 +1,38 @@
+# === PYTHON ===
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Django
+ecommerce/media/
+ecommerce/staticfiles/
+
+# Virtual Env
+venv/
+env/
+
+# Django Migrations (keep __init__.py)
+ecommerce/**/migrations/*.py
+!ecommerce/**/migrations/__init__.py
+
+# === ANGULAR ===
+ecommerce-frontend/node_modules/
+ecommerce-frontend/dist/
+ecommerce-frontend/.angular/
+
+# === ENV FILES ===
+.env
+*.env
+
+# === OS FILES ===
+.DS_Store
+Thumbs.db
+
+# === EDITORS ===
+.vscode/
+.idea/
+
+# === DOCKER ===
+*.pid
+*.tar

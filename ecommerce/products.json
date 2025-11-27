@@ -1,0 +1,587 @@
+[
+{
+  "model": "shop.product",
+  "pk": 1,
+  "fields": {
+    "name": "The Chola Tigers: Avengers of Somnath",
+    "image": "products/cholabook_tI4qyaF.jpg",
+    "description": "1025 CE, India.\r\nMahmud of Ghazni believes he has crushed the spirit of Bharat---the Shiva Linga at the Somnath temple lies shattered and thousands are dead.",
+    "price": "649.50",
+    "category": 4,
+    "stock": 8,
+    "created_at": "2025-10-24T05:56:12.887Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 2,
+  "fields": {
+    "name": "Mahabharata: Stories of Valor and Virtue",
+    "image": "products/mahabaratha.jpg",
+    "description": "This captivating collection brings to life the thrilling adventures, fierce battles, and timeless wisdom of one of India’s greatest epics. Meet extraordinary heroes who embody courage, resilience, and righteousness.",
+    "price": "349.90",
+    "category": 4,
+    "stock": 24,
+    "created_at": "2025-10-24T05:59:54.393Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 3,
+  "fields": {
+    "name": "Lymio Men Cargo Pant",
+    "image": "products/menscargo.jpg",
+    "description": "en Cargo || Men Cargo Pants || Men Cargo Pants Cotton || Cargos for Men",
+    "price": "679.79",
+    "category": 1,
+    "stock": 5,
+    "created_at": "2025-10-24T06:01:26.909Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 4,
+  "fields": {
+    "name": "Lymio Men's Regular Fit Low Rise Cotton Cargos Pants",
+    "image": "products/cargomen.jpg",
+    "description": "Men Cargo || Men Cargo Pants || Men Cargo Pants Cotton || Cargos for Men",
+    "price": "455.60",
+    "category": 1,
+    "stock": 12,
+    "created_at": "2025-10-24T06:02:26.723Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 5,
+  "fields": {
+    "name": "Russell Hobbs 16600 2-Slice Pop Up Toaster",
+    "image": "products/russel.webp",
+    "description": "POWERFUL 700W PERFORMANCE ⚡ – Experience efficient toasting with 700 watts of power, allowing you to enjoy quick and consistent results for your breakfast needs.",
+    "price": "199.80",
+    "category": 2,
+    "stock": 7,
+    "created_at": "2025-10-24T06:03:58.782Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 6,
+  "fields": {
+    "name": "Pigeon 1.5 litre Hot Kettle",
+    "image": "products/kettlec.webp",
+    "description": "The classical mirror polish of the appearance makes your electric kettle 1.5 Litre unique and aesthetic.",
+    "price": "999.78",
+    "category": 2,
+    "stock": 40,
+    "created_at": "2025-10-24T06:04:59.551Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 7,
+  "fields": {
+    "name": "CeraVe AM Facial Moisturizing Lotion",
+    "image": "products/beautyi.jpg",
+    "description": "Moisturizing Lotion is a potent day cream with SPF 30 that provides UVA and UVB protection and ensures your skin.",
+    "price": "329.00",
+    "category": 3,
+    "stock": 32,
+    "created_at": "2025-10-24T06:07:09.796Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 8,
+  "fields": {
+    "name": "Dream Beauty Intuition Lipstick",
+    "image": "products/beautyy.webp",
+    "description": "Full Coverage, Feather-Light Feel: Intuition Cream Lipstick delivers rich, high-impact pigments in one effortless swipe.",
+    "price": "189.00",
+    "category": 3,
+    "stock": 60,
+    "created_at": "2025-10-24T06:08:03.907Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 9,
+  "fields": {
+    "name": "Pureheart Nutreat Salted Pistachios",
+    "image": "products/groceries.webp",
+    "description": "These pista nuts/dry fruits can be a flavorful and energizing snack to replenish your energy levels.",
+    "price": "745.12",
+    "category": 5,
+    "stock": 15,
+    "created_at": "2025-10-24T06:09:23.473Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 10,
+  "fields": {
+    "name": "Vedaka Raw Peanuts, Pink, 1kg",
+    "image": "products/groceries2.webp",
+    "description": "Peanuts are a naturally good source of dietary protein composed.",
+    "price": "677.24",
+    "category": 5,
+    "stock": 51,
+    "created_at": "2025-10-24T06:10:16.872Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 11,
+  "fields": {
+    "name": "Samsung 183 L, 4 Star, Digital Inverter, Direct-Cool Single Door Refrigerator",
+    "image": "products/fridge.jpg",
+    "description": "Direct Cool Refrigerator: Stylish Single Door Refrigerator with Modern Camellia Purple pattern. Enjoy powerful cooling that can last longer.",
+    "price": "9999.02",
+    "category": 2,
+    "stock": 34,
+    "created_at": "2025-10-25T06:21:21.350Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 12,
+  "fields": {
+    "name": "Tata Sampann Unpolished Toor Dal/",
+    "image": "products/toor.jpg",
+    "description": "Tata Sampann dals do not undergo any artificial polishing with water, oil or leather, thereby retaining their goodness and wholesome character.",
+    "price": "167.02",
+    "category": 5,
+    "stock": 8,
+    "created_at": "2025-10-25T06:23:05.723Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 13,
+  "fields": {
+    "name": "Symbol Premium Men's Slim Fit Stretch Knit Pants",
+    "image": "products/pants.jpg",
+    "description": "Knitted material premium casual trousers offer a versatile option that seamlessly transitions between workwear and casualwear.",
+    "price": "1599.66",
+    "category": 1,
+    "stock": 99,
+    "created_at": "2025-10-25T06:24:44.729Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 14,
+  "fields": {
+    "name": "Noy Liquid Matte Festival Lipstick Pack 4 Unique Colors Peach",
+    "image": "products/beauty8.jpg",
+    "description": "The Noy Festive Collection comes in a beautifully designed box that captures the spirit of celebration.",
+    "price": "167.50",
+    "category": 3,
+    "stock": 4,
+    "created_at": "2025-10-25T06:26:10.050Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 15,
+  "fields": {
+    "name": "Legendary Whitetails Men's Henley Shirt Long Sleeve",
+    "image": "products/shirt1_DkeWlmW.jpg",
+    "description": "ur Tough as Buck thermal henley usually runs true to size, though some find the need to size down.",
+    "price": "299.00",
+    "category": 1,
+    "stock": 20,
+    "created_at": "2025-11-25T04:33:12.600Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 16,
+  "fields": {
+    "name": "Legendary Whitetails Men's Western Flannel Shirt",
+    "image": "products/shirt2_ILjB4q6.jpg",
+    "description": "Our Western flannel has a relaxed fit for more freedom of movement. If between sizes, refer to our size chart and consider sizing down.",
+    "price": "549.90",
+    "category": 1,
+    "stock": 5,
+    "created_at": "2025-11-25T04:34:31.703Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 17,
+  "fields": {
+    "name": "COOFANDY Mens Flannel Shirts Long Sleeve",
+    "image": "products/shirt3_vsxdBq4.jpg",
+    "description": "The flannel shirt use a classic plaid pattern that exudes unique appeal.",
+    "price": "399.77",
+    "category": 1,
+    "stock": 10,
+    "created_at": "2025-11-25T04:35:40.323Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 18,
+  "fields": {
+    "name": "Legendary Whitetails Men's Long Sleeve Henley Shirt",
+    "image": "products/shirt4_U56Db6a.jpg",
+    "description": "Our Recluse henley typically fits true to size. For a roomier feel, consider a larger size. View our Size Chart for the best fit.",
+    "price": "679.12",
+    "category": 1,
+    "stock": 25,
+    "created_at": "2025-11-25T04:36:55.108Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 19,
+  "fields": {
+    "name": "Amazon Essentials Mens Regular-Fit Long-Sleeve",
+    "image": "products/shirt5_J0YlE0x.jpg",
+    "description": "Made from lightweight yet durable washed poplin, offering comfort and versatility for any season.",
+    "price": "199.45",
+    "category": 1,
+    "stock": 39,
+    "created_at": "2025-11-25T04:38:08.498Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 20,
+  "fields": {
+    "name": "SAMSUNG Galaxy S25 Ultra, 256GB Smartphone",
+    "image": "products/mobiles_8xKtxAo.jpg",
+    "description": "Stay one step ahead with a phone that gives you the info you need before you even know you need it with Now Brief.",
+    "price": "99000.12",
+    "category": 2,
+    "stock": 10,
+    "created_at": "2025-11-25T04:41:30.648Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 21,
+  "fields": {
+    "name": "Motorola Moto G Power 5G",
+    "image": "products/mobiles1_8bY4bZx.webp",
+    "description": "6.7\" FHD+ 120Hz display* and Dolby Atmos**. Upgrade your entertainment with an incredibly sharp, fluid display backed by multidimensional stereo sound.",
+    "price": "25999.50",
+    "category": 2,
+    "stock": 8,
+    "created_at": "2025-11-25T04:42:45.070Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 22,
+  "fields": {
+    "name": "Sony 43-Inch Class 4K Ultra HD BRAVIA 3 LED Smart TV",
+    "image": "products/tv_DBEiqR8.jpg",
+    "description": "Get access to all your favorite streaming apps in one place with Google TV.",
+    "price": "55089.12",
+    "category": 2,
+    "stock": 7,
+    "created_at": "2025-11-25T04:44:25.563Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 23,
+  "fields": {
+    "name": "INSIGNIA 55-inch Class F50 Series LED 4K UHD Smart Fire TV",
+    "image": "products/tv1_rGGF4ON.jpg",
+    "description": "Enjoy breathtaking HDR10 4K movies and TV shows at 4 times the resolution of Full HD.",
+    "price": "39566.00",
+    "category": 2,
+    "stock": 12,
+    "created_at": "2025-11-25T04:45:31.043Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 24,
+  "fields": {
+    "name": "Sound Bar for Smart TV, 16'/60W Soundbar",
+    "image": "products/soundbar_KjtebJV.jpg",
+    "description": "Rythflo sound bars for TV feature 2 large bass radiator units releasing room-filling sound and deep impactful bass.",
+    "price": "9999.99",
+    "category": 2,
+    "stock": 4,
+    "created_at": "2025-11-25T04:47:08.849Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 25,
+  "fields": {
+    "name": "medicube Collagen Jelly Cream- Niacinamide & Freeze-Dried Hydrolyzed Collagen",
+    "image": "products/beautys_wquECmm.jpg",
+    "description": "Instantly experience tightened, radiant skin with the 'Korean Glass Glow' effect.",
+    "price": "375.50",
+    "category": 3,
+    "stock": 11,
+    "created_at": "2025-11-25T04:48:25.761Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 26,
+  "fields": {
+    "name": "CeraVe Foaming Facial Cleanser, Daily Face Wash for Oily Skin",
+    "image": "products/facewash_JUzxurv.jpg",
+    "description": "Oily skin cleanser dispenses as a clear gel cleanser and transforms into a foam as you lather.",
+    "price": "159.45",
+    "category": 3,
+    "stock": 30,
+    "created_at": "2025-11-25T04:49:44.007Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 27,
+  "fields": {
+    "name": "Cetaphil Face Wash, Daily Facial Cleanser",
+    "image": "products/facewash1_vjQOp6C.jpg",
+    "description": "Reinforces the skin barrier, balances skin and minimizes the appearance of pores.",
+    "price": "759.16",
+    "category": 3,
+    "stock": 19,
+    "created_at": "2025-11-25T04:50:40.532Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 28,
+  "fields": {
+    "name": "Pantene Shampoo & Conditioner Set, Daily Moisture Renewal",
+    "image": "products/shampoo_aQSkSbQ.webp",
+    "description": "Complete hair care duo that cleanses, nourishes, and hydrates for healthy, smooth, and manageable hair.",
+    "price": "299.33",
+    "category": 3,
+    "stock": 7,
+    "created_at": "2025-11-25T04:51:38.204Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 29,
+  "fields": {
+    "name": "Native Shampoo and Conditioner",
+    "image": "products/shampoo2_woB27Vg.webp",
+    "description": "Volumizing Shampoo and Conditioner Set - This set lifts flat, limp hair for visible volume and bounce while cleansing .",
+    "price": "339.34",
+    "category": 3,
+    "stock": 33,
+    "created_at": "2025-11-25T04:52:32.548Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 30,
+  "fields": {
+    "name": "You, Me, and Forever (Blushing)",
+    "image": "products/books_3sPu63S.jpg",
+    "description": "Laura Pavlov is best known for writing swoony, emotional stories with a side of angst and a dash of humor.",
+    "price": "995.73",
+    "category": 4,
+    "stock": 10,
+    "created_at": "2025-11-25T04:53:57.491Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 31,
+  "fields": {
+    "name": "Harry Potter à L'école des Sorciers (French Edition)",
+    "image": "products/Hporter2_ZAPkxBf.jpg",
+    "description": "Le jour de ses onze ans, Harry Potter, un orphelin élevé par un oncle et une tante qui le détestent, voit son existence bouleversée.",
+    "price": "455.87",
+    "category": 4,
+    "stock": 66,
+    "created_at": "2025-11-25T04:55:56.772Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 32,
+  "fields": {
+    "name": "Darkstalker: A Graphic Novel",
+    "image": "products/books3_npUc9Rb.jpg",
+    "description": "In the SeaWing kingdom, a young prince learns he is an animus―capable of wonderful magic that comes with a terrible price.",
+    "price": "549.58",
+    "category": 4,
+    "stock": 13,
+    "created_at": "2025-11-25T04:57:12.030Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 33,
+  "fields": {
+    "name": "King of Ashes: A Novel",
+    "image": "products/book1_faNYsna.jpg",
+    "description": "When eldest son Roman Carruthers is summoned home after his father’s car accident, he finds his younger brother.",
+    "price": "444.44",
+    "category": 4,
+    "stock": 5,
+    "created_at": "2025-11-25T05:00:44.563Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 34,
+  "fields": {
+    "name": "Moral Tales of Panchtantra",
+    "image": "products/book2_VaEz3rI.jpg",
+    "description": "The stories of Panchtantra are very old. They were originally written in Sanskrit.",
+    "price": "99.00",
+    "category": 4,
+    "stock": 6,
+    "created_at": "2025-11-25T05:01:58.027Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 35,
+  "fields": {
+    "name": "Sundarakandamu (Telugu)",
+    "image": "products/book4_XwmQMPP.jpg",
+    "description": "Sundarakanda in Ramayanam is the most powerful kanda. Sundara kanda also one of the beautiful kanda. Lord Hanuma adventure, finding sitamma, Warning Ravana.",
+    "price": "249.50",
+    "category": 4,
+    "stock": 15,
+    "created_at": "2025-11-25T05:04:07.292Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 36,
+  "fields": {
+    "name": "Autobiography of a Yogi (Telugu)",
+    "image": "products/book5_8URaNqI.jpg",
+    "description": "In 1996, Yoga International hailed Paramahansa Yogananda as \"the father of the yoga in the west.",
+    "price": "555.66",
+    "category": 4,
+    "stock": 6,
+    "created_at": "2025-11-25T05:06:09.442Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 37,
+  "fields": {
+    "name": "Lemon Turmeric Kojic Soap - Turmeric Soap Bar",
+    "image": "products/soap_XfAfGpB.webp",
+    "description": "The Lemon Turmeric formula actively removes excess oil without stripping natural moisture.",
+    "price": "220.00",
+    "category": 5,
+    "stock": 78,
+    "created_at": "2025-11-25T05:07:50.187Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 38,
+  "fields": {
+    "name": "Rice Krispies Treats Marshmallow Snack Bars",
+    "image": "products/groceries1_WuQJWaW.jpg",
+    "description": "Discover sweet flavor and crispy texture; Only 90 calories per bar; No high fructose corn syrup; Contains milk and soy ingredients.",
+    "price": "80.00",
+    "category": 5,
+    "stock": 22,
+    "created_at": "2025-11-25T05:09:45.106Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 39,
+  "fields": {
+    "name": "Bloom Nutrition Superfood Greens Powder",
+    "image": "products/grocerie2_0jxezwh.jpg",
+    "description": "Bloom Nutrition's Greens Superfood Powder supports gut health and digestion, works to reduce bloating.",
+    "price": "409.10",
+    "category": 5,
+    "stock": 11,
+    "created_at": "2025-11-25T05:10:43.715Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 40,
+  "fields": {
+    "name": "Quaker Instant Oatmeal",
+    "image": "products/oat_7Zxlg90.jpg",
+    "description": "Includes 48 Quaker Instant Oatmeal packets: 23 Maple and Brown Sugar, 13 Apples and Cinnamon, 7 Cinnamon and Spice, 5 Peaches and Cream flavor.",
+    "price": "277.09",
+    "category": 5,
+    "stock": 4,
+    "created_at": "2025-11-25T05:11:47.640Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 41,
+  "fields": {
+    "name": "McCormick Grill Mates Spices",
+    "image": "products/aaes_m6CfEv3.jpg",
+    "description": "Four most-loved Grill Mates Seasonings together in one set.",
+    "price": "100.67",
+    "category": 5,
+    "stock": 3,
+    "created_at": "2025-11-25T05:12:40.939Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 42,
+  "fields": {
+    "name": "Highlander Men's Checkered Slim Fit Shirt",
+    "image": "products/shirt_nvyjrYK.jpg",
+    "description": "Slim Fit, Long Sleeves, Casual Checked Shirts for Men's, designed for a sleek and modern appeal.",
+    "price": "549.00",
+    "category": 1,
+    "stock": 49,
+    "created_at": "2025-11-25T15:35:03.541Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 43,
+  "fields": {
+    "name": "Soulflower Tea Tree Essential Oil",
+    "image": "products/atea_kKcJQOo.jpg",
+    "description": "TeaTree Essential Oil reduces acne, makes skin softer and smoother, reduces blemishes, redness, itching, and dark spots.",
+    "price": "399.00",
+    "category": 3,
+    "stock": 7,
+    "created_at": "2025-11-25T15:36:10.016Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 44,
+  "fields": {
+    "name": "OnePlus Nord Buds 2r True Wireless in Ear Earbuds",
+    "image": "products/oneplus_oYDmsZj.webp",
+    "description": "[Enhanced Sound Experience]: The buds comes with 12.4mm driver unit, which delivers crisp clear and enhanced bass quality sound.",
+    "price": "1799.00",
+    "category": 2,
+    "stock": 1,
+    "created_at": "2025-11-25T15:37:14.097Z"
+  }
+},
+{
+  "model": "shop.product",
+  "pk": 45,
+  "fields": {
+    "name": "ZOUK Women's Handcrafted Shoulder Tote Bag",
+    "image": "products/bag_s2fgNzG.jpg",
+    "description": "This versatile Vegan Leather Tote bag for women has a Main Zipper Compartment.",
+    "price": "789.00",
+    "category": 3,
+    "stock": 4,
+    "created_at": "2025-11-25T15:38:34.916Z"
+  }
+}
+]

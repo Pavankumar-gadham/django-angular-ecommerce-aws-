@@ -13,12 +13,12 @@ venv/
 env/
 
 # Django Migrations (keep __init__.py)
-ecommerce/**/migrations/*.py
-!ecommerce/**/migrations/__init__.py
+# ecommerce/**/migrations/*.py
+# !ecommerce/**/migrations/__init__.py
 
 # === ANGULAR ===
 ecommerce-frontend/node_modules/
-ecommerce-frontend/dist/
+#ecommerce-frontend/dist/
 ecommerce-frontend/.angular/
 
 # === ENV FILES ===

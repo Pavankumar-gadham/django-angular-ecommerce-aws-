@@ -1,0 +1,37 @@
+﻿[
+{
+  "model": "shop.category",
+  "pk": 1,
+  "fields": {
+    "name": "Fashion"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 2,
+  "fields": {
+    "name": "Electronics"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 3,
+  "fields": {
+    "name": "Beauty"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 4,
+  "fields": {
+    "name": "Books"
+  }
+},
+{
+  "model": "shop.category",
+  "pk": 5,
+  "fields": {
+    "name": "Groceries"
+  }
+}
+]

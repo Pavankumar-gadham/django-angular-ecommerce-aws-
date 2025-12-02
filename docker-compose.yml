@@ -21,8 +21,8 @@ services:
     volumes:
       - sqlite_data:/app/db
     environment:
-      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
-      - CORS_ALLOWED_ORIGINS=http://localhost:3000
+      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1,16.171.174.66,backend
+      - CORS_ALLOWED_ORIGINS=http://16.171.174.66:3000,http://localhost:3000
     networks:
       - webnet
 
@@ -31,3 +31,8 @@ volumes:
 
 networks:
   webnet:
+
+#for production
+# backend:
+#   volumes:
+#     - sqlite_data:/app

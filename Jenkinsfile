@@ -19,9 +19,8 @@ pipeline {
         stage('Install Backend Dependencies') {
             steps {
                 dir("${BACKEND_DIR}") {
-                    echo "Setting up Python environment..."
-                    sh 'python3 -m venv venv'
-                    sh '. venv/bin/activate && pip install -r requirements.txt'
+                    echo "Installing Python dependencies..."
+                    sh 'pip3 install -r requirements.txt'
                 }
             }
         }

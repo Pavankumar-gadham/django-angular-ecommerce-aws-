@@ -31,15 +31,6 @@ pipeline {
         }
 
         stage('Install Frontend Dependencies') {
-            steps {
-                dir("${FRONTEND_DIR}") {
-                    echo "Installing Angular dependencies..."
-                    sh 'npm install'
-                }
-            }
-        }
-
-        stage('Install Frontend Dependencies') {
     steps {
         dir("${FRONTEND_DIR}") {
             echo "Installing Angular dependencies..."
@@ -47,6 +38,15 @@ pipeline {
         }
     }
 }
+
+        stage('Build Frontend') {
+            steps {
+                dir("${FRONTEND_DIR}") {
+                    echo "Building Angular app..."
+                    sh 'npm run build -- --configuration production'
+                }
+            }
+        }
 
         // other stages unchanged...
     }

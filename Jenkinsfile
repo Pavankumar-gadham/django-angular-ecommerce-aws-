@@ -15,12 +15,16 @@ pipeline {
                 checkout scm
             }
         }
-
         stage('Install Backend Dependencies') {
             steps {
                 dir("${BACKEND_DIR}") {
-                    echo "Installing Python dependencies..."
-                    sh 'pip3 install -r requirements.txt'
+                    echo "Setting up virtualenv and installing Python dependencies..."
+                    sh '''
+                        python3 -m venv venv
+                        . venv/bin/activate
+                        pip install --upgrade pip
+                        pip install -r requirements.txt
+                    '''
                 }
             }
         }

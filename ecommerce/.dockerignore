@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.log
+
+# SQLite DB (never copy into image)
+*.sqlite3
+
+# Virtual environments
+venv/
+env/
+
+# Django static & media (generated at runtime)
+ecommerce/staticfiles/
+ecommerce/media/
+
+# Environment files
+.env
+.env.*
+*.env
+
+# Git
+.git
+.gitignore
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+ecommerce-frontend/

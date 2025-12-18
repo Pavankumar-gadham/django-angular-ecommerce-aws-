@@ -1,5 +1,27 @@
+# Node / Angular
 node_modules
 dist
+.angular
+npm-debug.log
+yarn-error.log
+
+# Git
 .git
+.gitignore
+
+# Editor / OS
 .vscode
+.DS_Store
+
+# Docker
+Dockerfile
+docker-compose.yml
+
+# Env / docs
+.env
+.env.*
+README.md
+
+# Tests & cache
+coverage
 *.log

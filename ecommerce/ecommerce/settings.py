@@ -92,6 +92,10 @@ DATABASES = {
     }
 }
 
+CORS_ALLOWED_ORIGINS = [
+    "http://my-angular-frontend-demo-123.s3-website.eu-north-1.amazonaws.com",
+]
+
 CORS_ALLOW_ALL_ORIGINS = True
 
 REST_FRAMEWORK = {
